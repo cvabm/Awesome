@@ -1,6 +1,5 @@
-## [开发笔记](index.md) | [chrome插件](chrome插件.md)
+## [开发笔记](index.md) | [chrome 插件](chrome插件.md)
 
-## 软件总结
 ### [Windows]() | [Android](android.md) | [Linux](linux.md) | [IOS](ios.md)
 
 - [常用软件](#常用)
@@ -41,47 +40,47 @@
 
 ## 常用
 
-- [chrome]
+- [chrome](https://www.google.com/chrome/)
 - [clash]
-- [7zip]
-- [wps]
+- [7zip](https://www.7-zip.org/)
+- [wps](https://www.wps.cn/)
 - [顶点工具箱]
-- [everthing]
-- [向日葵]
-- [todesk]
-- [搜狗输入法]
-- [geek]
-- [Android Studio]
-- [WebStorm]
-- [vscode]
-- [Clion]
-- [notepad++]
-- [beyond-compare]
-- [xmind]
-- [postman]
-- [wireshark]
-- [notion]
-- [雷神模拟器]
-- [bluestack]
-- [vmware]
-- [DB Browser for SQLite]
-- [微信]
-- [foxmail]
+- [everthing](https://www.voidtools.com/zh-cn/)
+- [向日葵](https://sunlogin.oray.com/)
+- [todesk](https://www.todesk.com/)
+- [搜狗输入法](https://shurufa.sogou.com/)
+- [geek](https://geekuninstaller.com/download)
+- [Android Studio](https://developer.android.com/studio)
+- [WebStorm](https://www.jetbrains.com/zh-cn/webstorm/)
+- [vscode](https://code.visualstudio.com/)
+- [Clion](https://www.jetbrains.com/clion/)
+- [notepad++](https://notepad-plus-plus.org/)
+- [beyond-compare](https://www.scootersoftware.com/)
+- [xmind](https://xmind.cn/)
+- [postman](https://www.postman.com/)
+- [wireshark](https://www.wireshark.org/)
+- [notion](https://www.notion.so/)
+- [雷神模拟器](http://www.lsplayer.com/)
+- [bluestack](https://www.bluestacks.com/)
+- [vmware](https://www.vmware.com/cn.html)
+- [DB Browser for SQLite](https://sqlitebrowser.org/)
+- [微信](https://weixin.qq.com/)
+- [foxmail](https://www.foxmail.com/)
 - [飞秋]
-- [vlcplayer]
+- [vlcplayer](https://www.videolan.org/vlc/)
 - [ida pro 7.6]阿里云盘
 - [反编译工具]蓝奏云
 - [xshell]
 - [FileZilla]
-- [jcpicker]
-- [git]
-- [jdk]
-- [node]
-- [gradle]
-- [rapidee] 设置环境变量
-- [flipper] 调试 react native 工具
-- [阿里云盘]
--
+- [jcpicker] 阿里云盘
+- [git](https://git-scm.com/)
+- [PatchViewer](https://github.com/megatops/PatchViewer) 查看 git 修改部分
+- [jdk](https://www.oracle.com/java/technologies/downloads/)
+- [node](https://nodejs.org/)
+- [gradle](https://gradle.org/)
+- [rapidee](http://www.rapidee.com/) 设置环境变量
+- [flipper](https://fbflipper.com/) 调试 react native 工具
+- [阿里云盘](https://www.alipan.com/)
 
 ## 应用程序
 
@@ -248,13 +247,13 @@
 - [Unlocker](http://www.softpedia.com/get/System/System-Miscellaneous/Unlocker.shtml) - 解除无法删除文件的锁定。
 - [Windows 终端命令的 A-Z](http://ss64.com/nt/)
 - [trafficmonitor] 显示当前网速
-- [clumsy]模拟弱网环境
-- [screen2exe] 录屏生成exe文件
-- [netlimiter] 监听windows各软件网速流量
+- [clumsy] 模拟弱网环境(阿里云盘)
+- [screen2exe] 录屏生成 exe 文件(阿里云盘)
+- [netlimiter] 监听 windows 各软件网速流量
 - [测试摄像头麦克风](https://www.p2hp.com/webcammictest/)
 - [油猴脚本](https://greasyfork.org/zh-CN)
 - [https://pixpinapp.com/] 长截图 、ovr
-- [idea代码提示](https://www.tabnine.com/)
+- [idea 代码提示](https://www.tabnine.com/)
 
 ### 下载工具
 
