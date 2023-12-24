@@ -87,7 +87,7 @@
 
 ### 音频
 
-- [AIMP3](http://www.aimp.ru/) - 32 位音频处理和多格式播放。
+- [AIMP3](http://www.aimp.ru/){:target="_blank"} - 32 位音频处理和多格式播放。
 - [Foobar2000](http://www.foobar2000.org/) - Windows 版的免费音频播放器，支持各种音频格式，并且有很多很酷的特色功能。
 - [Winamp](http://www.winamp.com/) - 能播放 MP3，MP2，WAV，VOCAls 和 MIDI 文件的音乐播放器。
 
