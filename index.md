@@ -41,3 +41,4 @@
 - [1.3 固定某个文件夹到快速访问](pages/固定某个文件夹到快速访问.md)
 - [1.4 rustdesk编译Android](https://gist.github.com/cvabm/79e1037ac9a786f2fd79af5e5e5b5b1c)
 - [1.5 socket客户端和服务端](https://gist.github.com/cvabm/def545747928947f3eeb0027e790da50)
+- [GSYVideoPlayer使用问题](pages/gsy.md)

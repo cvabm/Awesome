@@ -1,8 +1,8 @@
 # webrtc
 
-slug: webrtc
-status: Published
-tags: react
+slug: webrtc  
+status: Published  
+tags: react  
 type: Post
 
 ## 源码
@@ -35,83 +35,83 @@ type: Post
 
 **2. A 生成一个 RTCPeerConnection 接口对象**
 
-```
+````
 RTCPeerConnection接口代表一个由本地计算机到远端的WebRTC连接。该接口提供了创建，保持，监控，关闭连接的方法的实现。
 
 pc = new RTCPeerConnection([RTCConfiguration dictionary]) //可选参数包括ice服务器等。
 
-```
+````
 
 **3. A 将流加入到 RTCPeerConnection 对象中**
 
-```
+````
 pc.addStream(stream);//该方法已经不推荐使用，推荐使用addTrack
 
 //或者加入轨道stream.getTracks().forEach(track => pc.addTrack(track, stream));
 
-```
+````
 
 **4. A 生成 Offer 信息**
 
-```
+````
 pc.createOffer(function(offer)=>{//创建完成 TODO 5},error)
 
-```
+````
 
 **5. A 将生成的 Offer 设置为本地描述。**
 
-```
+````
 pc.setLocalDescription(new RTCSessionDescription(offer),function(){
 
 //设置完成 TODO 6},error);
 
-```
+````
 
 **6. A 将生成的 Offer 发给另一端 B（服务器中转）**
 
-```
+````
 send json.stringify(offer)
 
-```
+````
 
 **7. B 也生成 RTCPeerConnection，并按需求设置流。**
 
-```
+````
 new RTCPeerConnection()
 
-```
+````
 
 **8. B 将收到的 Offer 设置为远端描述。**
 
-```
+````
 pc.setRemoteDescription(new RTCSessionDescription(Json.parse(offerString)),function(){//设置完成 TODO 9},error);
 
-```
+````
 
 **9. B 生成 Answer，并设置为本地描述。**
 
-```
+````
 pc.createAnswer(function(answer){pc.setLocalDescription(new RTCSessionDescription(answer),function(){ //设置完成，TODO 10 })},error)
 
-```
+````
 
 **10. B 把 Answer 发送给发起方 A(服务器中转)**
 
-```
+````
 send json.stringify(answer)
 
-```
+````
 
 **11. A 将 Answer 设置为远端描述。**
 
-```
+````
 pc.setRemoteDescription(new RTCSessionDescription(Json.parse(answerString)),function(){//设置完成 TODO 9},error);
 
-```
+````
 
 **12. 交换 ICE 候选地址信息**
 
-```
+````
 建立连接过程中，会回调onicecandidate事件，传递ICE候选地址，我们需要将其转发至另一端，并通过另一端的方法addIceCandidate方法设置对方的候选地址。
 pc.onicecandidate = function(event) {if (event.candidate)
  { // 发送 let iceinfo = event.candidate 至另一端 }
@@ -128,7 +128,7 @@ pc.onicecandidate = function(event) {if (event.candidate)
 
 硬件只能被一个流占用，多个RTCPeerConnection可以共享这一个流。
 
-```
+````
 
 ## 一些 demo 和相关网站
 
@@ -144,44 +144,42 @@ pc.onicecandidate = function(event) {if (event.candidate)
 
 ## 基本概念
 
-> NAT
-将内网与内网通信时怎么将内网私有 IP 地址转换为可在网络中传播的合法 IP 地址
-通过UDP 打洞实现 NAT 穿越是一种在处于使用了 NAT 的私有网络中的 Internet 主机之间建立双向 UDP 连接的方法STUN
-STUN（Simple Traversal of UDP Through NATs）其作用是进行 NAT 类型判定，对于可以穿越的 NAT 类型进行 UDP 穿越。TURN
-TURN（Traversal Using Relays around NAT），其主要作用是通过服务端进行数据转发。ICE
-ICE 跟 STUN 和 TURN 不一样，ICE 不是一种协议，而是一个 framework，它整合了 STUN 和 TURN。REMB
-REMB （Receiver Estimated Maximum Bitrate ），用于估算网络带宽。RTCP
-RTCP（The RTP Control Protocol ），RTP 控制协议。通常用于报告 RTP 数据的接收与发送数据的统计报告。RTP
-RTP（Real-time Transport Protocol ），一种网络传输协议，在 UDP 之上，通常用于音视频数据的传输。GCC
+> NAT  
+将内网与内网通信时怎么将内网私有 IP 地址转换为可在网络中传播的合法 IP 地址  
+通过UDP 打洞实现 NAT 穿越是一种在处于使用了 NAT 的私有网络中的 Internet 主机之间建立双向 UDP 连接的方法STUN  
+STUN（Simple Traversal of UDP Through NATs）其作用是进行 NAT 类型判定，对于可以穿越的 NAT 类型进行 UDP 穿越。TURN  
+TURN（Traversal Using Relays around NAT），其主要作用是通过服务端进行数据转发。ICE  
+ICE 跟 STUN 和 TURN 不一样，ICE 不是一种协议，而是一个 framework，它整合了 STUN 和 TURN。REMB  
+REMB （Receiver Estimated Maximum Bitrate ），用于估算网络带宽。RTCP  
+RTCP（The RTP Control Protocol ），RTP 控制协议。通常用于报告 RTP 数据的接收与发送数据的统计报告。RTP  
+RTP（Real-time Transport Protocol ），一种网络传输协议，在 UDP 之上，通常用于音视频数据的传输。GCC  
 GCC（Google Congestion Control），google 提出一套拥塞控制算法，主要有两种：一种是通过丢包率计算拥塞，另一种是通过时延计算拥塞。
-> 
 
----
+***
 
-```
+````
 RTC(Real Time Communication): 实时通信
 WebRTC: 基于web的实时通信
 Signaling: 信令, 一些描述媒体或网络的字符串
 
-```
+````
 
 > WebRTC 逻辑相关
 > 
-> 
 > 在 WebRTC 中包括了 Stream, Track 和 channel 的概念。
 > 
-> - **Track**
-> Track（轨）, 轨是 WebRTC 中借鉴了其它多媒体相关的概念。轨的特性大家都非常清楚，两条轨是永远不会相交的。轨用在多媒体中，表式的是每条 “轨” 数据都是独立存在的，不会与其它 “轨” 相交。如音频轨，视频轨。
-> - **Stream**
-> 在 WebRTC 中分为媒流（MediaStream）和数据流（DataStream）。对于 MediaStream 是一个多条轨的集合，在它里面包括了一个终端的音频转和视频轨。
-> - **Channel**
-> Channel 是传输层面的概念，也就是音视频数据最终要交由 channel 传送出去。而 channel 最终会交由 socket 将数据发送出来。了为解耦 stream 与 socket，所以增加了 channel 的概念。
-> - **sdp**
-> SDP(Session Description Protocol) 的目的是在媒体会话中传递媒体信息。SDP 在很多地方使用，WebRTC 也会使用它做媒体信息交换。
+> - **Track**  
+>   Track（轨）, 轨是 WebRTC 中借鉴了其它多媒体相关的概念。轨的特性大家都非常清楚，两条轨是永远不会相交的。轨用在多媒体中，表式的是每条 “轨” 数据都是独立存在的，不会与其它 “轨” 相交。如音频轨，视频轨。
+> - **Stream**  
+>   在 WebRTC 中分为媒流（MediaStream）和数据流（DataStream）。对于 MediaStream 是一个多条轨的集合，在它里面包括了一个终端的音频转和视频轨。
+> - **Channel**  
+>   Channel 是传输层面的概念，也就是音视频数据最终要交由 channel 传送出去。而 channel 最终会交由 socket 将数据发送出来。了为解耦 stream 与 socket，所以增加了 channel 的概念。
+> - **sdp**  
+>   SDP(Session Description Protocol) 的目的是在媒体会话中传递媒体信息。SDP 在很多地方使用，WebRTC 也会使用它做媒体信息交换。
 
 ## webrtc 视频方向的设置
 
-```
+````
 sdp信息中包装有个a=extmap:7 urn:3gpp:video-orientation 参数
 
 视频发送方将其视频方向进行封装（具体方式见9.3），封装以后，放在视频数据帧的一个扩展位置，然后随视频帧一起打包后通过rtp/rtcp/udp发送给接收方。
@@ -212,13 +210,13 @@ Orientation = total & 0x07;
 版权声明：本文为CSDN博主「晓昏行者」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：<https://blog.csdn.net/liangguangxiang/java/article/details/48526219>
 
-```
+````
 
 ## SDP 详细介绍
 
 **SDP 主要包括以下信息：**
 
-```
+````
 >会话的名称与目的
 >会话的存活时间
 >会话中的媒体信息，这是最主要的，它又包括以下内容：
@@ -227,11 +225,11 @@ Orientation = total & 0x07;
 >   - 传输协议
 >   - 传输的IP和端口
 
-```
+````
 
 **SDP 的格式**
 
-```
+````
 SDP是由多个<type>=<value>组成的。
 其中<type>是一个字符， <value>是一个字符串。需要特别注意的是，=两边是不能有空格的。
 
@@ -243,11 +241,11 @@ SDP会话描述由一个会话级描述（session_level description）和多个�
 
 总之，除非媒体部分重载，会话级的值是各个媒体的缺省默认值。
 
-```
+````
 
 **参数结构**
 
-```
+````
 Version（必选）
 v=0 SDP的版本号，不包括次版本号。
 
@@ -324,7 +322,7 @@ m=audio 49230 RTP/AVP 96 97 98 a=rtpmap:96 L8/8000 a=rtpmap:97 L16/8000 a=rtpmap
 
 注： 如果SDP语法分析器不能识别某一类型(Type),则整个描述丢失。 如果”a=”的某属性值不理解,则予以丢失此属性。 会话级的描述就是媒体级描述的。
 
-```
+````
 
 ```java
 Session description
@@ -360,33 +358,31 @@ a=* (zero or more media attribute lines)
 
 [https://blog.csdn.net/foruok/article/details/72677338](https://blog.csdn.net/foruok/article/details/72677338)
 
-webrtc 服务器https://blog.csdn.net/bvngh3247/article/details/80746640
+webrtc 服务器[https://blog.csdn.net/bvngh3247/article/details/80746640](https://blog.csdn.net/bvngh3247/article/details/80746640)
 
 NAThttps://www.cnblogs.com/whyandinside/archive/2010/12/08/1900492.html
 
 ## 基本网络概念
 
-> 网关
-网关通常用来表示一个概念，作为内网和外网的接入点，一般我们称为网关。它的具体介质是路由器路由器
-是连接[因特网]、[广域网]的设备，它处于网络层，主要用来寻址。它会根据信道的情况自动选择和设定路由，以最佳路径，按前后顺序发送信号交换机
+> 网关  
+网关通常用来表示一个概念，作为内网和外网的接入点，一般我们称为网关。它的具体介质是路由器路由器  
+是连接[因特网]、[广域网]的设备，它处于网络层，主要用来寻址。它会根据信道的情况自动选择和设定路由，以最佳路径，按前后顺序发送信号交换机  
 在局域网（LAN）中，交换机类似于城市中的立交桥，它的主要功能是桥接其他网络设备（路由器、防火墙和无线接入点），并连接客户端设备（计算机、服务器、网络摄像机和 IP 打印机）。简而言之，交换机可以为网络上所有的不同设备提供一个中心连接点。
-> 
 
-> TCP/UDP/HTTP/SOCKET
-tcp/udp 传输层
-http 是基于应用层，基于 tcp 协议
-socket 是 tcpip 中运输层 tcp 和 udp 协议中的一个实现寻址的重要实现websocket/http
-目的是取代 HTTP 在双向通信场景下的使用，而且它的实现方式有些也是基于 HTTP 的（WS 的默认端口是 80 和 443）相同点
-都是基于 TCP 的应用层协议。
-都使用 Request/Response 模型进行连接的建立。
-在连接的建立过程中对错误的处理方式相同，在这个阶段 WS 可能返回和 HTTP 相同的返回码。
-都可以在网络中传输数据。不同点
-WS 使用 HTTP 来建立连接，但是定义了一系列新的 header 域，这些域在 HTTP 中并不会使用。
-WS 的连接不能通过中间人来转发，它必须是一个直接连接。
-WS 连接建立之后，通信双方都可以在任何时刻向另一方发送数据。
-WS 连接建立之后，数据的传输使用帧来传递，不再需要 Request 消息。
+> TCP/UDP/HTTP/SOCKET  
+tcp/udp 传输层  
+http 是基于应用层，基于 tcp 协议  
+socket 是 tcpip 中运输层 tcp 和 udp 协议中的一个实现寻址的重要实现websocket/http  
+目的是取代 HTTP 在双向通信场景下的使用，而且它的实现方式有些也是基于 HTTP 的（WS 的默认端口是 80 和 443）相同点  
+都是基于 TCP 的应用层协议。  
+都使用 Request/Response 模型进行连接的建立。  
+在连接的建立过程中对错误的处理方式相同，在这个阶段 WS 可能返回和 HTTP 相同的返回码。  
+都可以在网络中传输数据。不同点  
+WS 使用 HTTP 来建立连接，但是定义了一系列新的 header 域，这些域在 HTTP 中并不会使用。  
+WS 的连接不能通过中间人来转发，它必须是一个直接连接。  
+WS 连接建立之后，通信双方都可以在任何时刻向另一方发送数据。  
+WS 连接建立之后，数据的传输使用帧来传递，不再需要 Request 消息。  
 WS 的数据帧有序。
-> 
 
 **webrtc 调试工具 chrome://webrtc-internals 的使用手册**
 
@@ -398,7 +394,7 @@ ssrc_2181152470_recv (ssrc)
 
 googCodecName 即可看到 vp8 还是 h264
 
-```
+````
 音频统计数据
 aecDivergentFilterFraction：TBD（后续会补全）
 
@@ -450,17 +446,17 @@ googFrameRateInput：发送端设置的初始帧率。
 googFrameRateSent：发送端实际发送的帧率，根据当前网络会进行动态调整。
 编辑于 2017-03-10
 
-```
+````
 
 ## android 编解码
 
-```
+````
 软解码器：通常以OMX.google开头，或者不以OMX开头的也为软解码器
 硬解码器：通常以OMX.[hardware_vendor]开头
 
-```
+````
 
-```
+````
 
 高通软编解码
 OMX.google.aac.decoder
@@ -501,9 +497,9 @@ OMX.qti.video.decoder.h263sw
 OMX.qti.video.decoder.mpeg4sw
 OMX.qti.video.decoder.vc1sw
 
-```
+````
 
-```
+````
 
 高通硬解
 OMX.qcom.video.decoder.avc - 264
@@ -529,11 +525,11 @@ OMX.hisi.video.decoder.mpeg2
 OMX.hisi.video.decoder.mpeg4
 OMX.hisi.video.decoder.vp8  -1088
 
-```
+````
 
 判断是否为软解
 
-```
+````
 frameworks/av/media/libstagefright/MediaCodecList.cpp
 
  bool MediaCodecList::isSoftwareCodec(const AString &componentName) {
@@ -543,7 +539,7 @@ frameworks/av/media/libstagefright/MediaCodecList.cpp
                     && !componentName.startsWithIgnoreCase("c2."));
 }
 
-```
+````
 
 相关文档
 
@@ -656,14 +652,14 @@ HardwareVideoEncoderFactory.java
 
 [https://blog.csdn.net/liang12360640/article/details/52096499](https://blog.csdn.net/liang12360640/article/details/52096499) ### sdp packetization-mode
 
-```
+````
 packetization-mode:
 表示支持的封包模式.
 1 、packetization-mode 值为 0 时或不存在时, 必须使用单一 NALU 单元模式.
 2、 packetization-mode 值为 1 时使用非交错(non-interleaved)封包模式.
 3、 packetization-mode 值为 2 时使用交错(interleaved)封包模式.
 
-```
+````
 
 ### sdp
 
@@ -694,7 +690,7 @@ private static final String[] supportedH264HwCodecPrefixes = {
 
 ### webbrtc 切换编解码
 
-```
+````
 1、拷贝libwebrtc.jar并引用
 2、as打开jar包里需要修改的文件MediaCodecVideoDecoderFactory.class，复制内容并新建文件到相同路径下;如：
 java/org/webrtc/MediaCodecVideoDecoderFactory.java
@@ -719,11 +715,11 @@ java/org/webrtc/MediaCodecVideoDecoderFactory.java
 5、拷贝build/intermediates/javac/debug/classes/org/webrtc/MediaCodecVideoDecoderFactory.class
 6、将以上文件拷贝到libwebrtc.zip中替换源文件，再改为.jar即可
 
-```
+````
 
 ### 获取手机支持的编解码信息
 
-```
+````
    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             MediaCodecList list = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
             MediaCodecInfo[] supportCodes = list.getCodecInfos();
@@ -763,7 +759,7 @@ java/org/webrtc/MediaCodecVideoDecoderFactory.java
             }
         }
 
-```
+````
 
 ### webrtc 安卓源码
 
@@ -771,18 +767,18 @@ java/org/webrtc/MediaCodecVideoDecoderFactory.java
 
 ### 华为解码 H264-720p 分辨率问题
 
-```
+````
 AndroidVideoDecoder.java中deliverDecodedFrame方法增加：
 if ((long)decodeTimeMs > 200L) {
 Logging.e("AndroidVideoDecoder", "Very high decode time: " + decodeTimeMs + "ms. Q size: . Might be caused by resuming H264 decoding after a pause.");
 decodeTimeMs = 200;
 }
 
-```
+````
 
 ### 华为平板h264失败
 
-```
+````
 ## webrtc编解码过程
 DefaultVideoEncoderFactory - createEncoder ：
 华为平板softwareEncoder是null，在HardwareVideoEncoderFactory中执行isHardwareSupportedInCurrentSdkH264
@@ -816,7 +812,7 @@ DefaultVideoEncoderFactory --
         }
     }
 
-```
+````
 
 ### 各型号手机编解码大全
 
