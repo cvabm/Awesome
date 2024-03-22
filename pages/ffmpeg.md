@@ -54,3 +54,14 @@ ffplay -vf "scale=iw/2:ih/2" http://samples.mplayerhq.hu/V-codecs/h264/interlace
 ffmpeg -re -stream_loop -1 -i .\720.mp4 -vcodec libx264 -acodec aac -f flv  rtmp://127.0.0.1:1935/live/hls              
             
 ```
+```
+查看支持的编解码器（也就是-vcodec后面可以接的参数）:
+命令：ffmpeg -codecs > codec.txt
+
+
+查看支持的封装格式（也就是-f后面可以接的参数）
+命令：ffmpeg -formats > formats.txt
+
+查看支持的滤镜（也就是-vf后面可以接的参数）:
+命令：ffmpeg -filters > filters.txt
+```
