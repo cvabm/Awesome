@@ -272,6 +272,7 @@
 ### 代理
 
 - [clash]()
+- [Hiddify Next](https://github.com/hiddify/hiddify-next/blob/main/README_cn.md)
 
 ## 配置与安装
 
