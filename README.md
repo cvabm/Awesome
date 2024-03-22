@@ -58,6 +58,7 @@
 - [beyond-compare](https://www.scootersoftware.com/)
 - [xmind](https://xmind.cn/)
 - [postman](https://www.postman.com/)
+- [Insomnia](https://github.com/Kong/insomnia) 免登录，支持websocket
 - [wireshark](https://www.wireshark.org/)
 - [notion](https://www.notion.so/)
 - [雷神模拟器](http://www.lsplayer.com/)
