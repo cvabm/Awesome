@@ -41,7 +41,7 @@
 ## 常用
 
 - [chrome](https://www.google.com/chrome/)
-- [clash]
+- [clash-meta](https://github.com/MetaCubeX/ClashMetaForAndroid)
 - [7zip](https://www.7-zip.org/)
 - [wps](https://www.wps.cn/)
 - [顶点工具箱]
@@ -272,8 +272,11 @@
 
 ### 代理
 
-- [clash]()
+- [clash-meta](https://github.com/MetaCubeX/ClashMetaForAndroid)
+- [sing-box](https://github.com/SagerNet/sing-box)
 - [Hiddify Next](https://github.com/hiddify/hiddify-next/blob/main/README_cn.md)
+- [v2rayNG](https://github.com/2dust/v2rayNG) 电脑版为v2rayN
+- Linux推荐sing-box、clash-verge
 
 ## 配置与安装
 
