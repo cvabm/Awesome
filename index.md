@@ -43,3 +43,4 @@
 - [1.5 socket客户端和服务端](https://gist.github.com/cvabm/def545747928947f3eeb0027e790da50)
 - [GSYVideoPlayer使用问题](pages/gsy.md)
 - [高德地图问题](pages/amap.md)
+- [gradle/java使用问题](pages/gradle.md)
