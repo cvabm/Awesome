@@ -344,7 +344,10 @@ apk 管理
 - `rz -y`
 - `sz file`
 - `yum install lrzsz`
-
+## 抓包
+- `ifconfig` 获取网卡名 ，比如如eno2
+-  `tcpdump -i eno2 -w temp.pcap`
+-  sz temp.pcap
 ## linux 拷贝文件
 
 - `scp -r /home/shaoxiaohu/test1 zhidao@192.168.0.1:/home/test2` 本机->远程服务器 test1 为源目录，test2 为目标目录，zhidao@192.168.0.1为远程服务器的用户名和 ip 地址。
