@@ -11,7 +11,7 @@ type: Post
 - 将本地mp4文件推流到rtsp
 `ffmpeg -re -stream_loop -1 -i .\\720.mp4 -vcodec libx264 -acodec aac -f flv rtmp://127.0.0.1:1935/live/hls`
 - ffplay半屏播放
-`ffplay -vf "scale=iw/2:ih/2" [http://samples.mplayerhq.hu/V-codecs/h264/interlaced_crop.mp4](http://samples.mplayerhq.hu/V-codecs/h264/interlaced_crop.mp4)`
+`ffplay -vf "scale=iw/2:ih/2" http://samples.mplayerhq.hu/V-codecs/h264/interlaced_crop.mp4`
 
 ### ffmpeg使用
 
