@@ -123,15 +123,17 @@ tar -czf modules.tar.gz *
 ```
 
 ## git 设置和取消代理
+- 注意端口是否正确，不一定是1080：clash  -general - port
 
 设置 git 代理
-
 1 git config –global http.proxy http://127.0.0.1:1080
+2 git config –global https.proxy https://127.0.0.1:1080  
 
-2 git config –global https.proxy https://127.0.0.1:1080
+检查设置是否成功：
+git config --global --get http.proxy
+git config --global --get https.proxy
 
 去掉 git 代理
-
 1 git config –global –unset http.proxy
 
 2 git config –global –unset https.proxy
