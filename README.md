@@ -83,6 +83,10 @@
 - [flipper](https://fbflipper.com/) 调试 react native 工具
 - [阿里云盘](https://www.alipan.com/)
 - [escrcpy](https://github.com/viarotel-org/escrcpy) 电脑控制手机
+## 电脑控制手机几种方式
+- escrcpy
+- android studio - running devices -点击+ - 选择设备即可
+- 
 
 ## 应用程序
 
