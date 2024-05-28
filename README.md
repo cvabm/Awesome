@@ -39,7 +39,7 @@
 - [版权](#版权)
 
 ## 常用
-
+- [Irfanview](https://www.irfanview.com/) 比windows自带快，缺点不美观
 - [chrome](https://www.google.com/chrome/)
 - [clash-meta](https://github.com/MetaCubeX/ClashMetaForAndroid)
 - [7zip](https://www.7-zip.org/)
