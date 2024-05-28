@@ -1,0 +1,33 @@
+### RTP/H264开源项目
+Android端的：
+- https://github.com/qfsun/Jrtplib4Android 
+- https://github.com/zhuohengfeng/Camera2Rtmp camera->rtmp
+- https://github.com/dourgulf/CameraStreaming camera->rtmp
+- https://github.com/JeffreyLau/AndroidRTSPLib camera/screen/mp4_file -> rtsp
+- https://github.com/pedroSG94/RootEncoder 推送android摄像头/屏幕共享到RTMP, RTSP, SRT and UDP(没有RTP)
+- https://github.com/Consti10/LiveVideo10ms 播放RTP或RAW中的udp的h264
+- https://github.com/xcy396/MediaCodecDemo 使用 MediaCodec、jlibrtp 实现实时视频通话
+- https://github.com/ChangeStrong/AndroidDemo 将摄像头yuv转H264
+- https://github.com/mjlong123123/VideoRecorder 录屏发送到rtp，没验证过
+- https://github.com/TomAdd/RTPServerDemo android端
+- https://github.com/lxz2014/rtp_h264 android端，只编不发
+  
+其他  
+- https://github.com/licaibiao/v4l2_video_audio_encode_live c++
+- https://github.com/tong123/rtp_stream
+- https://github.com/tinydigger/RTPH264Streaming
+- https://github.com/MontaukLaw/hisiv3518e
+- https://github.com/z80020100/RKModules
+- https://github.com/yundiantech/ScreenShare
+### RTP开源库
+- ORTP c
+- JRTPLIB c++
+- jlibrtp java
+
+### B帧
+官方的profile配置不管用  
+https://developer.android.com/media/optimize/sharing?authuser=1&hl=zh-cn#b-frames_and_encoding_profiles
+```
+format.setInt32(KEY_PROFILE, AVCProfileHigh);
+format.setInt32(KEY_LATENCY, 1);
+```
