@@ -41,4 +41,18 @@ a=rtpmap:96 H264
 a=framerate:20
 c=IN IP4 10.166.10.8
 ```
+### mediacodec
+- 创建编解码器的两种方式
+  - `MediaCodec.createEncoderByType("video/avc")`
+  - `MediaCodec.createByCodecName("OMX.Nvidia.h264.encoder")`
+##   udp/h264发送
+- udp不能发送大于1472字节数据,一般设为1400
+- 先发sps\pps
+- 通过sps查看视频分辨率
+```
+.000 0011  1100 .... = pic_width_in_mbs_minus1: 59
+.... 0000  0101 101. = pic_height_in_map_units_minus1: 44
+```
+- `X = (59+1)*16 = 960，Y = (44+1)*16 = 720`
+
   
