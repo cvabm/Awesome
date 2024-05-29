@@ -817,3 +817,5 @@ DefaultVideoEncoderFactory --
 ### 各型号手机编解码大全
 
 [https://videoprocessing.ai/benchmarks/mobile-video-codec-benchmark.html](https://videoprocessing.ai/benchmarks/mobile-video-codec-benchmark.html)
+
+- https://juejin.cn/post/7232872175647473722 固定分辨率
