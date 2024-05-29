@@ -32,3 +32,13 @@ https://developer.android.com/media/optimize/sharing?authuser=1&hl=zh-cn#b-frame
 format.setInt32(KEY_PROFILE, AVCProfileHigh);
 format.setInt32(KEY_LATENCY, 1);
 ```
+### 调试
+- vlc播放rtp流
+  -  新建文件11.sdp，内容如下，用vlc打开即可播放：
+```
+m=video 6666 RTP/AVP 96
+a=rtpmap:96 H264
+a=framerate:20
+c=IN IP4 10.166.10.8
+```
+  
