@@ -12,6 +12,12 @@ type: Post
 `ffmpeg -re -stream_loop -1 -i .\\720.mp4 -vcodec libx264 -acodec aac -f flv rtmp://127.0.0.1:1935/live/hls`
 - ffplay半屏播放
 `ffplay -vf "scale=iw/2:ih/2" http://samples.mplayerhq.hu/V-codecs/h264/interlaced_crop.mp4`
+- h264 ->rtp
+`ffmpeg -re -i d:\videos\1080P.264 -vcodec copy -f rtp rtp://127.0.0.1:1234>test_rtp_h264.sdp`
+`ffplay -protocol_whitelist "file,udp,rtp" -i test_rtp_h264.sdp`
+- h264 -> ts
+`ffmpeg -re -i d:\videos\1080P.264 -vcodec copy -f rtp_mpegts rtp://127.0.0.1:1234`
+参考：https://zhuanlan.zhihu.com/p/450527182
 
 ### ffmpeg使用
 
