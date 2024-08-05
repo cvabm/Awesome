@@ -47,6 +47,7 @@
 - [顶点工具箱]
 - [everthing](https://www.voidtools.com/zh-cn/)
 - [向日葵](https://sunlogin.oray.com/)
+- [parsec](https://parsec.app/) 画质清晰比向日葵流畅
 - [todesk](https://www.todesk.com/)
 - [搜狗输入法](https://shurufa.sogou.com/)
 - [geek](https://geekuninstaller.com/download)
