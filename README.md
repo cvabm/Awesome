@@ -87,7 +87,7 @@
 ## 电脑控制手机几种方式
 - escrcpy
 - android studio - running devices -点击+ - 选择设备即可
-- 
+- anlink 有单独控制按键
 
 ## 应用程序
 
