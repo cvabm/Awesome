@@ -102,6 +102,9 @@
 - [mpv](http://mpv.io/) -媒体播放器。 (https://github.com/mpv-player/mpv)
 - [PotPlayer](http://potplayer.daum.net/) - 多媒体播放器，具有广泛的编解码器集合，它还为用户提供大量配置选项。
 - [ScreenToGif](http://www.screentogif.com/) - 它允许你录制屏幕的一部分区域并保存为 gif 或视频。 (https://github.com/NickeManarin/ScreenToGif/)
+- [screen2exe] 录屏生成 exe 文件(阿里云盘)
+-  在线录屏 `https://recordscreen.io/`
+- ocam、班迪录屏（这两个都挺好用） 阿里云盘
 - [VLC](http://www.videolan.org/vlc/index.html) - 多媒体播放器和框架，用于播放 DVD，音频 CD，VCD 和各种流协议。 (https://github.com/videolan/vlc)
 
 ### 聊天客户端
@@ -255,7 +258,6 @@
 - [Windows 终端命令的 A-Z](http://ss64.com/nt/)
 - [trafficmonitor] 显示当前网速
 - [clumsy] 模拟弱网环境(阿里云盘)
-- [screen2exe] 录屏生成 exe 文件(阿里云盘)
 - [netlimiter] 监听 windows 各软件网速流量
 - [测试摄像头麦克风](https://www.p2hp.com/webcammictest/)
 - [油猴脚本](https://greasyfork.org/zh-CN)
