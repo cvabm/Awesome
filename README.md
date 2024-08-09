@@ -101,12 +101,13 @@
 
 - [mpv](http://mpv.io/) -媒体播放器。 (https://github.com/mpv-player/mpv)
 - [PotPlayer](http://potplayer.daum.net/) - 多媒体播放器，具有广泛的编解码器集合，它还为用户提供大量配置选项。
-- [ScreenToGif](http://www.screentogif.com/) - 它允许你录制屏幕的一部分区域并保存为 gif 或视频。 (https://github.com/NickeManarin/ScreenToGif/)
-- [screen2exe] 录屏生成 exe 文件(阿里云盘)
--  在线录屏 `https://recordscreen.io/`
-- ocam、班迪录屏（这两个都挺好用） 阿里云盘
 - [VLC](http://www.videolan.org/vlc/index.html) - 多媒体播放器和框架，用于播放 DVD，音频 CD，VCD 和各种流协议。 (https://github.com/videolan/vlc)
-
+### 录屏
+- 土豆录屏（好用） - 蓝奏云
+- [ScreenToGif](http://www.screentogif.com/) - 它允许你录制屏幕的一部分区域并保存为 gif 或视频
+- - [screen2exe] 录屏生成 exe 文件(阿里云盘)
+- 在线录屏 `https://recordscreen.io/`
+- ocam、班迪录屏（这两个都挺好用） 阿里云盘
 ### 聊天客户端
 
 - [Discord](https://discordapp.com) - Discord 是免费的语音和文本聊天客户端，适合玩家和非玩家。您可以从浏览器使用它，它可以在 iOS，Android，Windows，Mac 和 Linux 上使用。
