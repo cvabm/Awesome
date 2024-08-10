@@ -552,3 +552,10 @@ Alacritty 默认不会添加配置文件，需要自己手动添加。
 ```
 
 [配色 1](https://github.com/alebelcor/alacritty-snazzy)
+
+### 检测服务端口是否打开
+```
+ssh -v 127.0.0.1 -p 80
+打印Connection established. 则打开了
+echo >/dev/tcp/127.0.0.1/80
+```
