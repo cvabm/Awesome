@@ -49,3 +49,4 @@
 - [远程工具使用](pages/wireshark.md)
 - [camera](pages/camera.md)
 - [sip](pages/sip.md)
+- [casaos安装和使用](pages/casaos安装和使用.md)
