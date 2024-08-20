@@ -116,7 +116,7 @@
 ### 压缩
 
 - [7-Zip](http://www.7-zip.org/) - 用于处理压缩包的开源 Windows 实用程序。完美支持 7z，ZIP，GZIP，BZIP2 和 TAR 的全部特性，其他格式也可解压缩。 (http://www.7-zip.org/download.html)
-- [Bandizip](https://www.bandisoft.com/bandizip小或许多其他图像属性压缩图像。
+- [Bandizip](https://www.lanzoui.com/i8av00j) 破解版除了报毒，没啥毛病
 - [WinRAR](http://www.rarlab.com/) - 强大的归档管理器。 它可以备份您的数据并减小电子邮件附件的大小，解压缩 RAR，ZIP 和其他文件。
 
 ### 个性化
