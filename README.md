@@ -77,7 +77,7 @@
 - [jcpicker] 阿里云盘
 - [git](https://git-scm.com/)
 - [PatchViewer](https://github.com/megatops/PatchViewer) 查看 git 修改部分
-- [jdk](https://www.oracle.com/java/technologies/downloads/)
+- [jdk](https://www.oracle.com/java/technologies/downloads/) oracle-java下载
 - [node](https://nodejs.org/)
 - [gradle](https://gradle.org/)
 - [rapidee](http://www.rapidee.com/) 设置环境变量
