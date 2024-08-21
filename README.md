@@ -81,6 +81,7 @@
 - [node](https://nodejs.org/)
 - [gradle](https://gradle.org/)
 - [rapidee](http://www.rapidee.com/) 设置环境变量
+- [vfox](https://vfox.lhan.me/zh-hans/) jdk版本切换工具
 - [flipper](https://fbflipper.com/) 调试 react native 工具
 - [阿里云盘](https://www.alipan.com/)
 - [escrcpy](https://github.com/viarotel-org/escrcpy) 电脑控制手机
