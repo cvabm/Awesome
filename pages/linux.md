@@ -64,7 +64,11 @@ $ sudo apt-get install openjdk-7-jre openjdk-7-jdk
 - 移动/翻页
     - `0` 行首
     - `$` 行尾
+    - `gg` 首行
+    - `G` 最后一行
     - `:nu` 跳到第 nu 行
+    - `10G` 跳转到第10行，跟:nu一样效果
+    - `10%` 跳转到文档10%进度
     - `Ctrl+u` 上半页
     - `Ctrl+d` 下半页
     - `Ctrl+f` 下一页
