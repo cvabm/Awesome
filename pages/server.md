@@ -449,3 +449,10 @@ extundelete
 ### nginx教程博客
 
 [https://github.com/jaywcjlove/nginx-tutorial](https://github.com/jaywcjlove/nginx-tutorial)
+
+
+### tcpdump使用
+`tcpdump -i eno2 -w temp.pcap` 指定网口eno2
+### https证书
+`openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout privkey.pem -out cacert.pem -days 3650
+` 生成key.pem和cert.pem
