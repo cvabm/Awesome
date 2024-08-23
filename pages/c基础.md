@@ -148,3 +148,27 @@ C:Files2022.2.5++.exe
 
 - 找到 cmake.exe 设为环境变量
 - cmake –build cmake-build-debug –target untitled -j 22
+
+### vscode使用
+- 新建文件main.cpp
+```
+#include <bits/stdc++.h>
+using namespace std;
+signed main(){
+    cout << "hello" << endl;
+}
+```
+- vscode默认命令行位powershell ，有问题,需改为cmd;
+    - 点击vscode命令行右边+ 下拉菜单改为cmd
+- 执行 g++ main.cpp a.exe
+`#define int int64_t` 定义int为64位整数
+
+### 开源库
+- https://github.com/mstorsjo/fdk-aac 开源AAC编码器里音质最好的
+- https://www.antisip.com/download/exosip2/ 
+- https://opus-codec.org/release/stable/2019/04/12/libopus-1_3_1.html
+- 
+
+https://github.com/ty6815/AvStackDocs/tree/52c1e04511d3c0908b7028c47566debb63202ae9/stream%20protocol/gb28181/%E5%9B%BD%E6%A0%87%E4%BF%A1%E4%BB%A4%E6%8A%93%E5%8C%85%E7%A4%BA%E4%BE%8B
+
+- #pragma once 为了避免同一个文件被include多次
