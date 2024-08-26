@@ -328,6 +328,10 @@ apk 管理
 - `df /mnt/sdcard` 列出来一个目录的空间状态信息
 - `sudo apt-get remove` 卸载软件
 
+- `dd if=/dev/zero of=zero_file bs=1M count=1024`全零文件：内容全为零字节，实际占用磁盘空间与文件大小相同。
+- `dd if=/dev/urandom of=random_file bs=1M count=1024` 随机数据文件：内容为随机字节，实际占用磁盘空间与文件大小相同。
+- `dd if=/dev/zero of=sparse_file bs=1M count=0 seek=1024` 稀疏文件：包含大量零字节，但这些零字节不实际占用磁盘空间，实际占用空间远小于文件大小。
+
 ## ubuntu
 
 - **常见问题**
