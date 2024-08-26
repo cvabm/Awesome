@@ -33,7 +33,8 @@ $ sudo apt-get install openjdk-7-jre openjdk-7-jdk
 
 [https://zhuanlan.zhihu.com/p/61228593](https://zhuanlan.zhihu.com/p/61228593)
 ## less|more|tail|vim|区别
-- less `f`前进 `b`后退  `q`退出
+- less 只查看，大文件加载比vim快
+    - `f`前进 `b`后退  `q`退出
     -  `/`搜索 n下一个搜索位置 N上一个
 - cat 打印查看文档内容
 - tail 实时监控日志，tail -f filename.txt ，默认后10行，-n 20，指定20行
