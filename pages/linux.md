@@ -32,7 +32,16 @@ $ sudo apt-get install openjdk-7-jre openjdk-7-jdk
 ### ubuntu 更换国内源
 
 [https://zhuanlan.zhihu.com/p/61228593](https://zhuanlan.zhihu.com/p/61228593)
-
+## less|more|tail|vim|区别
+- less `f`前进 `b`后退  `q`退出
+    -  `/`搜索 n下一个搜索位置 N上一个
+- cat 打印查看文档内容
+- tail 实时监控日志，tail -f filename.txt ，默认后10行，-n 20，指定20行
+- nano 简单文本，初学者
+- grep `grep "login" log.txt 直接打印过滤出的语句
+- awk
+- sed
+- watch
 ## vim 常用命令
 
 - 基本
