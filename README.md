@@ -205,10 +205,14 @@
 
 ### 文本编辑器
 
+- notepadd-- 推荐，代替++
+- notepadd++ 经常卡顿
 - [Neovim](https://neovim.io/) - vim 真正的继任者。
-- [Notepad++](https://notepad-plus-plus.org/) - 一款支持多种编程语言的源码编辑器。 (https://github.com/notepad-plus-plus/notepad-plus-plus)
 - [Visual Studio Code](https://code.visualstudio.com/) - 用于构建和调试现代 Web 和云应用程序。 (https://github.com/Microsoft/vscode)
-- [emeditor] 打开大文件
+- 打开大文件
+  - less命令
+  - logview 推荐
+  - emeditor
 
 ### 十六进制编辑器
 
