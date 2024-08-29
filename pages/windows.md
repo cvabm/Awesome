@@ -8,8 +8,10 @@ type: Post
 ### 常用命令
 
 - `start .`或者`explorer .`打开当前路径的文件夹
-- `df`disk free
+- `df -h` disk free
 - `tasklist | findstr "nginx"` 查看某服务是否运行
+- `taskkill /F /IM nginx.exe` 停止服务
+- `taskkill /F /PID 118028`
 
 ### windows/问题
 
