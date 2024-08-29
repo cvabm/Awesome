@@ -51,3 +51,4 @@
 - [camera](pages/camera.md)
 - [sip](pages/sip.md)
 - [casaos安装和使用](pages/casaos安装和使用.md)
+- [笔记软件总结](pages/笔记折腾记.md)
