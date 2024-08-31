@@ -75,3 +75,11 @@ nohup + 命令
 [https://tabby.sh/](https://tabby.sh/)
 
 手机端：juiceSSH、DaRemote(可实时监测)
+
+---
+
+### 文件服务器
+- https://github.com/sigoden/dufs ，支持上传下载，执行exe即可
+- http://iscute.cn/chfs 跟上边那个差不多
+- 
+
