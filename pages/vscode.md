@@ -65,3 +65,7 @@ git reset
 ### Plugins 搜索不了插件
 
 翻墙，把 appearance -> System setting -> HTTP Proxy -> Auto-deteced proxy settings 勾上
+
+### terminal中执行提示不是内部或外部命令
+- cmd中可执行的话，重启vscode即可
+
