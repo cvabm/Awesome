@@ -8,9 +8,8 @@ type: Post
 [vscode 在线版](https://vscode.dev/)
 
 ## vscode 快捷键
-
+```
 `ctrl + shift + o` 定位方法
-
 `option + command + T` 关闭其他页
 
 `alt + shift + f` 格式化
@@ -18,6 +17,11 @@ type: Post
 `ctrl+shift+i` 插入当前时间
 
 插件 Insert Date String
+
+ctrl+z为撤销
+ctrl+shift+z 为取消撤销
+```
+
 
 ## 插件
 
