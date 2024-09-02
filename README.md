@@ -1,5 +1,3 @@
-## [开发笔记](index.md) | [chrome 插件](chrome插件.md)
-
 ### [Windows]() | [Android](android.md) | [Linux](linux.md) | [IOS](ios.md)
 
 - [常用软件](#常用)
